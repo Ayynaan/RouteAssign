@@ -1,0 +1,8 @@
+<div class="form-group">
+    <label for="exampleSelect1">Person to Display:</label>
+    <select (change)="valueSet($event.target.value)"class="custom-select" id="people-select">
+      <option *ngFor="let person of people; let i = index">{{i}} {{person.name}}</option>
+    </select>
+  </div>
+  
+
